@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel Slider 📸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <!-- Header -->
+        <header class="app-header">
+            <span class="badge">Image-Carousel-Slider</span>
+            <h1>📸 POPULAR SLIDER</h1>
+            <p>Galeri slide gambar interaktif dengan transisi mulus!</p>
+        </header>
+
+        <!-- Carousel Container -->
+        <div class="carousel-wrapper" id="carousel-wrapper">
+            
+            <!-- Slides Stage -->
+            <div class="carousel-track" id="carousel-track">
+                
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop" alt="Pemandangan Alam Pop">
+                    <div class="slide-caption">
+                        <h3>🌌 Night Vibes</h3>
+                        <p>Eksplorasi keindahan malam dengan warna neon.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop" alt="Pantai Tropis">
+                    <div class="slide-caption">
+                        <h3>🏖️ Summer Beach</h3>
+                        <p>Nikmati suasana pantai tropis yang menyegarkan.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop" alt="Pegunungan Bintang">
+                    <div class="slide-caption">
+                        <h3>🏔️ Mountain Peak</h3>
+                        <p>Petualangan seru mendaki puncaknya petualangan.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop" alt="Kota Neon">
+                    <div class="slide-caption">
+                        <h3>🌆 Urban Lights</h3>
+                        <p>Gemerlap warna-warni lampu di tengah kota.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tombol Navigasi Prev/Next -->
+            <button class="nav-btn prev-btn" id="prev-btn" aria-label="Previous Slide">❮</button>
+            <button class="nav-btn next-btn" id="next-btn" aria-label="Next Slide">❯</button>
+
+            <!-- Indikator Dots -->
+            <div class="dots-container" id="dots-container">
+                <!-- Dots di-generate secara otomatis via JS -->
+            </div>
+        </div>
+
+        <!-- Footer Control Status -->
+        <div class="carousel-footer">
+            <span class="status-tag">Autoplay: <strong id="autoplay-status">ON</strong></span>
+            <button id="btn-toggle-play" class="btn-play">⏸ Jeda Slider</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
